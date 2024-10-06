@@ -28,3 +28,7 @@
 //clear message to show if the user wins or lose 
 // play again button after the user wins or lose 
 </p>
+
+<h1>Markup</h1>
+<p>This is the first skitch of the game or how should it be </p>
+<img src="/planning/markup.png">
