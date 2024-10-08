@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(66, 65, 63);
+  background-color: gray;
+  font-family: system-ui, sans-serif;
+
+  min-height: 100dvh;
+  margin: 0;
+}
+.container {
+  width: 900px;
+  height: 350px;
+  background: white;
+  display: flex;
+  padding: 50px;
+  border-radius: 15px;
+}
+.word-display {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+/* the letter above the dash */
+.word-display .letter {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  border-bottom: 3px solid black;
+  width: 28px;
+  font-size: 32px;
+  text-align: center;
+}
+/* remove the dash if the letter is correct */
+.word-display .letter.gussed {
+  border-color: transparent;
+  margin: -40px 0 35px;
+}
+
+.game-box h4 {
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+/* making the wrong answers more visiable to give the user better knowledge of the wrong answers*/
+.game-box .guesses-text b {
+  color: red;
+  font-weight: bold;
+}
+.game-box .keyboard {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.keyboard button {
+  cursor: pointer;
+  color: white;
+  background: rgb(0, 0, 0);
+  text-transform: uppercase;
+  border-radius: 14px;
+}
