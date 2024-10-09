@@ -9,7 +9,6 @@
 <li>As a user I want to be able to see if the letter is correct or wrong </li>
 <li>As a user I don’t want to click the letter twice either its correct or wrong </li>
 <li>As a user I want to see how many chances I still have for the chosen word </li>
-<li>As a user I want to see the wrong letters I clicked </li>
 <li>As a user I want to see the correct letter in their correct place </li>
 <li>As a user I want to see clear message for winning or losing situation </li>
 <li>As a user I want to play again either I win or lose </li>
@@ -41,3 +40,6 @@
 <h1>Markup</h1>
 <p>This is the first skitch of the game or how should it be </p>
 <img src="/planning/markup.png">
+
+<p>this is the actual game </p>
+<img src = "/planning/hangman.png">
