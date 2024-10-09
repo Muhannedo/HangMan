@@ -15,27 +15,22 @@
 </strong>
 </ul>
 <h1>Pseudocode </h1>
-<h3>init()</h3>
-<li>random word will be picked </li>
-<h3>startGame()</h3>
-<li>show the length of the choosing letter  </li>
-<li>build the keyboard buttons</li>
-<h3>Handle Guess</h3>
-<li>check id the clicked button "letter" is inside the word or not, add it to guessedLetters</li>
-<li>disable the button</li>
-<li>if letter inside the word update the display else reduce chances</li>
-<h3>check status</h3>
-<li>if word guessed correctly show win message </li>
-<li>if word guessed wrong or gusses left = 0 show lose message and show correct word </li>
-<h3>restart game</h3>
-<li>restart the game and reset the gusses and the word </li>
-<h3>Start game</h3>
-
-
-
-
-
-
+<h3> Variables</h3>
+<li>select word : select word randomly</li>
+<li>guessedLetter : store the letters gussed by the user in an array</li>
+<li>guessed Left : 6 attemps for the user to guess the word</li>
+<li>displaywords: show the correct guesses </li>
+<h3>functions</h3>
+<ul>startGaem</ul>
+<li>reset the game : displayWord , guessedLetter , guessesLeft</li>
+<li>update the guessesLeft to 6</li>
+<li>generate keyboard for guessing the letters</li>
+<li>attach an event Listener to each button</li>
+<h3>updateWordDisplay</h3>
+<li>reveal the gussed letters</li>
+<li>update the guessedLeft</li>
+<h3>disableKeyboard</h3>
+<li>disable all buttons if the game ends</li>
 
 <h1>Markup</h1>
 <p>This is the first skitch of the game or how should it be </p>
@@ -43,9 +38,6 @@
 
 <p>this is the actual game </p>
 <img src= "/planning/FinalLook.png">
-
-
-
 
 
 

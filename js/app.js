@@ -111,6 +111,7 @@ function disableKeyboard() {
     button.disabled = true;
   });
 }
+
 /*----------- Event Listeners ----------*/
 document.getElementById('play-again').addEventListener('click', startGame);
 startGame();
