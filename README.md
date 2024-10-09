@@ -28,7 +28,7 @@
 <li>if word guessed correctly show win message </li>
 <li>if word guessed wrong or gusses left = 0 show lose message and show correct word </li>
 <h3>restart game</h3>
-<li>restart the game </li>
+<li>restart the game and reset the gusses and the word </li>
 <h3>Start game</h3>
 
 
@@ -42,4 +42,12 @@
 <img src="/planning/markup.png">
 
 <p>this is the actual game </p>
-<img src = "/planning/hangman.png">
+<img src= "/planning/FinalLook.png">
+
+
+
+
+
+
+<h1>Other Resources</h1>
+<p>with the help of AI i generated around 200 word  </p>

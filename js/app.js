@@ -28,13 +28,14 @@ let displayWords = '';
 // start the game function
 function startGame() {
   selectedWord = words[Math.floor(Math.random() * words.length)];
+  displayWords = '';
   guessedLetters = [];
   guessesLeft = 6;
-  for (let index = 0; index < selectedWord.length; index++) {
+  for (let index = 0; index <=selectedWord.length; index++) {
     displayWords += '_';
     
   }
-  document.getElementById('word-display').textContent=displayWords.trim();
+  document.getElementById('word-display').textContent=displayWords.trim(); 
   document.getElementById('guesses-left').textContent = guessesLeft;
   document.getElementById('message').textContent = '';
   
@@ -57,7 +58,7 @@ function generateKeyboard() {
 
 // chekc if the letter is inside the word or not
 function guessHaldinig(letter) {
-  if (guessedLetters.includes(letter)) return;
+  if (guessedLetters.includes(letter)) return; 
 
   guessedLetters.push(letter);
   const buttons = document.querySelectorAll('#keyboard button');
@@ -93,8 +94,9 @@ function updateWordDisplay() {
 // win or lose if the user gets the word before 6 gusses wins else lose
 function checkGameStatus() {
   const currentWord = document.getElementById('word-display').textContent.replace(/\s/g, '').toLowerCase();
-  if (currentWord === selectedWord) {
-    document.getElementById('message').textContent = 'You Win!';
+    if (currentWord.trim() === selectedWord) {
+
+    document.getElementById('message').textContent = "Hooray You WIN!!!!!!";
     disableKeyboard();
   } else if (guessesLeft <= 0) {
     document.getElementById('message').textContent = `You Lose! The word was ${selectedWord}`;
@@ -110,5 +112,5 @@ function disableKeyboard() {
   });
 }
 /*----------- Event Listeners ----------*/
-document.getElementById('reset-button').addEventListener('click', startGame);
+document.getElementById('play-again').addEventListener('click', startGame);
 startGame();
