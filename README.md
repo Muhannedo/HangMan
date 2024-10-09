@@ -16,18 +16,27 @@
 </strong>
 </ul>
 <h1>Pseudocode </h1>
-<p><h4>creatining variables</h4> //create empty array to save the wrong letters 
-// create empty array to save the correct letters
-// create array with the random words 
-</p>
-<p>//play button
-// display all letter as a buttons for the user alphabetical 
-// display the empty letter for the chosen word 
-//click the letter (button)
-//check IF the letter chosen is correct or wrong IF correct display in the empty space ELSE in the wrong variable 
-//clear message to show if the user wins or lose 
-// play again button after the user wins or lose 
-</p>
+<h3>init()</h3>
+<li>random word will be picked </li>
+<h3>startGame()</h3>
+<li>show the length of the choosing letter  </li>
+<li>build the keyboard buttons</li>
+<h3>Handle Guess</h3>
+<li>check id the clicked button "letter" is inside the word or not, add it to guessedLetters</li>
+<li>disable the button</li>
+<li>if letter inside the word update the display else reduce chances</li>
+<h3>check status</h3>
+<li>if word guessed correctly show win message </li>
+<li>if word guessed wrong or gusses left = 0 show lose message and show correct word </li>
+<h3>restart game</h3>
+<li>restart the game </li>
+<h3>Start game</h3>
+
+
+
+
+
+
 
 <h1>Markup</h1>
 <p>This is the first skitch of the game or how should it be </p>

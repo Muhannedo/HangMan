@@ -9,20 +9,18 @@
     <script defer src="/js/app.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="hangman-box">
-        <h1 class="tittle">Hangman Game</h1>
-      </div>
-      <div class="game-box">
-        <ul class="word-display">
+    <div id="game-container">
+      <h1>Hangman Game</h1>
 
-        </ul>
-        <h4 class="guesses-text">
-          Wrong guesses:
-          <b>0 / 6</b>
-        </h4>
-        <div class="keyboard"></div>
-      </div>
+      <p id="word-display">_ _ _ _ _</p>
+
+      <p id="message"></p>
+
+      <div id="keyboard"></div>
+
+      <p class="guesses-left">Guesses Left: <span id="guesses-left">6</span></p>
+
+      <button id="reset-button">Reset Game</button>
     </div>
   </body>
 </html>
