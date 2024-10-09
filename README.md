@@ -21,7 +21,7 @@
 <li>guessed Left : 6 attemps for the user to guess the word</li>
 <li>displaywords: show the correct guesses </li>
 <h3>functions</h3>
-<ul>startGaem</ul>
+<li>StartGame</li>
 <li>reset the game : displayWord , guessedLetter , guessesLeft</li>
 <li>update the guessesLeft to 6</li>
 <li>generate keyboard for guessing the letters</li>
