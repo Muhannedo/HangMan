@@ -20,18 +20,18 @@ const words = [
   "taco", "burrito", "pizza", "pasta", "spaghetti", "lasagna", "ravioli", "noodle", "dumpling", "sushi", "sashimi"
 ];
 /*---------- Variables (state) ---------*/
-let selectedWord = '';
-let guessedLetters = [];  
+let wordSelected = '';
+let letterGuessed = [];  
 let guessesLeft = 6;
 let displayWords = '';
 /*-------------- Functions -------------*/
 // start the game function
 function startGame() {
-  selectedWord = words[Math.floor(Math.random() * words.length)];
+  wordSelected = words[Math.floor(Math.random() * words.length)];
   displayWords = '';
-  guessedLetters = [];
+  letterGuessed = [];
   guessesLeft = 6;
-  for (let index = 0; index <=selectedWord.length; index++) {
+  for (let index = 0; index <=wordSelected.length; index++) {
     displayWords += '_';
     
   }
@@ -58,9 +58,9 @@ function generateKeyboard() {
 
 // chekc if the letter is inside the word or not and to disable the clicked letter either correct or wrong 
 function guessHaldinig(letter) {
-  if (guessedLetters.includes(letter)) return; 
+  if (letterGuessed.includes(letter)) return; 
 
-  guessedLetters.push(letter);
+  letterGuessed.push(letter);
   const buttons = document.querySelectorAll('#keyboard button');
   buttons.forEach(button => {
     if (button.textContent === letter) {
@@ -68,7 +68,7 @@ function guessHaldinig(letter) {
     }
   });
 //if the letter inside the word push it in display word
-  if (selectedWord.includes(letter.toLowerCase())) {
+  if (wordSelected.includes(letter.toLowerCase())) {
     updateWordDisplay();
   } else {
     //decrease the chances 
@@ -82,8 +82,8 @@ function guessHaldinig(letter) {
 // if the letter inside the word display it 
 function updateWordDisplay() {
   let displayWord = '';
-  for (const letter of selectedWord) {
-    if (guessedLetters.includes(letter.toUpperCase())) {
+  for (const letter of wordSelected) {
+    if (letterGuessed.includes(letter.toUpperCase())) {
       displayWord += letter.toUpperCase() + ' ';
     } else {
       displayWord += '_ ';
@@ -95,12 +95,12 @@ function updateWordDisplay() {
 // win or lose if the user gets the word before 6 gusses wins else lose
 function checkGameStatus() {
   const currentWord = document.getElementById('word-display').textContent.replace(/\s/g, '').toLowerCase();
-    if (currentWord.trim() === selectedWord) {
+    if (currentWord.trim() === wordSelected) {
 
     document.getElementById('message').textContent = "Hooray You WIN!!!!!!";
     disableKeyboard();
   } else if (guessesLeft <= 0) {
-    document.getElementById('message').textContent = `You Lose! The word was ${selectedWord}`;
+    document.getElementById('message').textContent = `You Lose! The word was ${wordSelected}`;
     disableKeyboard();
   }
 }
