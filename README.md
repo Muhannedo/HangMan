@@ -41,4 +41,5 @@
 
 
 <h1>Other Resources</h1>
+<h3><a href="https://muhannedo.github.io/HangMan/">Live website</a> </h3>
 <p>with the help of AI i generated around 200 word  </p>
