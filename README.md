@@ -6,7 +6,6 @@
 <ul><strong>
 <li>As a user, I want to see a landing page when I arrive at the website to know I'm in the right place.</li>
 <li>As a user I should be able to click on the letter I want to chose </li>
-<li>As a user I want to be able to see if the letter is correct or wrong </li>
 <li>As a user I don’t want to click the letter twice either its correct or wrong </li>
 <li>As a user I want to see how many chances I still have for the chosen word </li>
 <li>As a user I want to see the correct letter in their correct place </li>

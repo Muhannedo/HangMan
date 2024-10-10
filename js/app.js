@@ -56,7 +56,7 @@ function generateKeyboard() {
   }
 }
 
-// chekc if the letter is inside the word or not
+// chekc if the letter is inside the word or not and to disable the clicked letter either correct or wrong 
 function guessHaldinig(letter) {
   if (guessedLetters.includes(letter)) return; 
 
@@ -67,10 +67,11 @@ function guessHaldinig(letter) {
       button.disabled = true;
     }
   });
-
+//if the letter inside the word push it in display word
   if (selectedWord.includes(letter.toLowerCase())) {
     updateWordDisplay();
   } else {
+    //decrease the chances 
     guessesLeft--;
     document.getElementById('guesses-left').textContent = guessesLeft;
   }
